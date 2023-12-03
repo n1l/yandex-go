@@ -1,0 +1,37 @@
+// File: mymath/go.mod
+module github.com/username/mymath
+
+go 1.16
+
+// File: mymath/addition.go
+package mymath
+
+func Add(a, b int) int {
+    return a + b
+}
+
+// File: main/go.mod
+module main
+
+go 1.16
+
+require (
+    github.com/username/mymath latest
+)
+
+// File: main/main.go
+package main
+
+import (
+    "fmt"
+
+    "github.com/username/mymath"
+)
+
+func main() {
+    if sum := mymath.Add(1, 2); sum != 3 {
+        panic(fmt.Sprintf("sum expected to be 3; got %d", sum))
+    }
+
+    fmt.Println("Well done!")
+}
