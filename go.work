@@ -5,4 +5,8 @@ use ./main
 use (
 	./newmain
 	./ypmodule
+    ./sum
+    ./test_3_func/first_func
+    ./test_3_func/sec_func
+    ./test_3_func/third_func
 )
