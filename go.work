@@ -3,6 +3,11 @@ go 1.21.4
 use ./main
 
 use (
+    ./flags_usage
+    ./net_flags
+    ./flags
+    ./cars
+    ./rest_users
 	./newmain
 	./ypmodule
     ./sum
