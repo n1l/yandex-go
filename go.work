@@ -3,6 +3,8 @@ go 1.21.4
 use ./main
 
 use (
+    ./prod_con
+    ./zip_server
     ./yml_tml
     ./flags_usage
     ./net_flags
